@@ -1,3 +1,4 @@
+import 'package:crm_tooling/widgets/dashboard_widget.dart';
 import 'package:crm_tooling/widgets/side_menu_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -15,11 +16,10 @@ class MainScreen extends StatelessWidget {
               child: SizedBox(
                 child: SideMenuWidget(),
               )),
-          Expanded(
-              flex: 7,
-              child: Container(
-                color: Colors.blue,
-              )),
+          const Expanded(
+            flex: 7,
+            child: DashboardWidget(),
+          ),
           Expanded(
               flex: 3,
               child: Container(
